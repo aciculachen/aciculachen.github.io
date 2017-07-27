@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+#wrapper {
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	clear:both;
+}
+#head{
+	height:28px;
+	background-color: #093b45;
+	font-family: cursive;
+	font-size:20px;
+	color:white;
+	text-align:right;
+}
+#top{
+    height:350px;
+}
+#header{
+
+}
+#fill{
+ height:30px;
+}
+#box{
+	width: 1050px;
+	height: 120px;
+	margin:auto;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+#dev{
+    position: right;
+	width: 335px;
+	#background-color: 	#99FF33;
+	display: inline-block;
+}
+#build {
+    position: relative;
+	width: 335px;
+	#background-color:	yellow;
+	display: inline-block;
+}
+#dep {
+    position: right;
+	width: 335px;
+	#background-color: 	#99FF33;
+	display: inline-block;
+}
+
+#start {		 
+	width: auto;
+    padding-bottom: auto;
+        height: 80px;
+}
+#restart {		 
+	width: auto;
+    padding-bottom: auto;
+    height: 200px;
+}
+#div{
+	height:100px;
+}
+
+#footer {
+	text-align: center;
+	font-size: 18px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom:0px;
+	font-family: cursive;
+    width: 100%;
+    color: #093b45;
+    background-color: gainsboro
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+	function change1() {
+		document.getElementById('png1').src="dev.png"
+	}
+	function change2() {
+		document.getElementById('png2').src="build.png"
+	}
+	function change3() {
+		document.getElementById('png3').src="dep.png"
+	}
+	function back_to_the_future(){
+		document.getElementById('png1').src="dev2.png";
+		document.getElementById('png2').src="build2.png";
+		document.getElementById('png3').src="dep2.png";
+	}
+    function detect_sub(){
+
+        var a= document.getElementById('upload')["file-input1"].value
+        var b= document.getElementById('upload')["file-input2"].value
+        var c= document.getElementById('upload')["file-input3"].value
+        if (!a || !b || !c){
+        	alert("You must upload all the required SBATs to construct a DevOps pipeline.");
+        	return false
+        }else{
+        	return true;
+        	document.getElementById('upload').submit();
+        	document.window.href='http://10.113.0.2/',1
+        }
+    }
+    function redirect(){
+    	        	document.location.href='http://10.113.0.2/'
+    }
+
+</script>
+
+<title>DevOpser.com</title>
+<body bgcolor="#FFFFF0">
+	<div id="wrapper">
+	<div id= "top"><div id= "head">DevOpser 1.0.0-beta in NTU VAL lab.</div>
+	</div>
+        <div id="header"><img src = "index_devopser.png" style="display:block; margin:auto;" "></div>
+
+        <form name = "form" id= "upload" action="/upload" method="post" enctype="multipart/form-data" onsubmit="return detect_sub()">
+
+         <div id= "fill"></div>
+
+        <div id="box">
+		    <div id="dev"><label for="file-input1"><img src="dev2.png" id="png1"></label><Input name="file" id="file-input1" Type="file" style="display: none;" accept=".yaml" onChange="change1()" ></div>
+            <div id="dev"><label for="file-input2"><img src="build2.png" id="png2"></label><Input name="file" id="file-input2" Type="file" style="display: none;" accept=".yaml" onChange="change2()"></div>
+		    <div id="dev"><label for="file-input3"><img src="dep2.png" id="png3"></label><Input name="file" id="file-input3" Type="file" style="display: none;" accept=".yaml" onChange="change3()"></div>
+        </div>
+         
+        <div id ="start"><label for ="submit"><img src="start4.png" onMouseOut="this.src='start4.png'" onMouseOver="this.src='start3.png'" style="display:block; margin:auto;" ></label><button id="submit" name="submit" type="submit" value = "submit" style="display: none;" onclick=" return detect_sub()"/>
+        </div>
+       <div id="restart"><label for="reset"><img src="restart2.png" style="display:block; margin:auto;" onMouseOut="this.src='restart2.png'" onMouseOver="this.src='restart.png'"></label> <Input name="resettest" id="reset" Type="reset" style="display: none;" onClick="back_to_the_future()"    > </div>
+        </form>
+     <div id= "tem" ></div>
+     <div id="footer"> Arimura Kasumi©2017</div>
+     </div>
+
+	         
+</body>
+
+</html>
