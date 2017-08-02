@@ -1,0 +1,100 @@
+html,
+body,
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+.fitDiv {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.transistion {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+#head-slider p.header-desc {
+    text-align: center;
+    color: #45b29a;
+    padding: 1em 0;
+    font-size: 180%;
+    font-weight: 400;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7 ;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif color: #3CB371;
+}
+
+.navbar-inverse {
+    background-color: #2E8B57;
+    border-color: transparent;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #F0FFF0 background-color: pink;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #3CB371
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #2E8B57;
+    background-color: #90EE90;
+}
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-static-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+    float: right;
+}
+
+.img_src {
+    width:  20vw;
+    height: auto;
+    vertical-align : middle;
+
+}
+.fig-wrap{
+   width:  100%; 
+   text-align : center;
+   height:40vh;
+   box-sizing: border-box;
+   background-color:        #66CDAA;
+}
+.contain-wrap{
+}
+.col-sm-12{
+    color:  #2F4F4F;
+}
+
+#ms{
+    float:left;
+    width: 50%;
+     text-align : center;
+}
+#bs{
+    float:right;
+    width: 50%;
+     text-align : center;
+}

@@ -1,155 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widch, initial-scale=1">
+    <title>Acicula Chen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-* {
-  margin: 0;
-  padding: 0;
+<body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Acicula Chen</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a data-toggle="collapse" data-target=".navbar-collapse" href="#About">About</a>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" data-target=".navbar-collapse" href="#Experience">Work</a>
+                        </li>
+                        <li>
+                            <a data-toggle="collapse" data-target=".navbar-collapse" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
 
-}
-#wrapper {
-	width: auto;
-	margin-right: auto;
-	margin-left: auto;
-	overflow: hidden;
-	clear:both;
-}
-#head{
-	height:28px;
-	background-color: #093b45;
-	font-family: cursive;
-	font-size:20px;
-	color:white;
-	text-align:right;
-}
-#top{
-    height:350px;
-}
-#header{
-
-}
-#fill{
- height:30px;
-}
-#box{
-	width: 1050px;
-	height: 120px;
-	margin:auto;
-	margin-right: auto;
-	margin-left: auto;
-
-}
-#dev{
-    position: right;
-	width: 335px;
-	#background-color: 	#99FF33;
-	display: inline-block;
-}
-#build {
-    position: relative;
-	width: 335px;
-	#background-color:	yellow;
-	display: inline-block;
-}
-#dep {
-    position: right;
-	width: 335px;
-	#background-color: 	#99FF33;
-	display: inline-block;
-}
-
-#start {		 
-	width: auto;
-    padding-bottom: auto;
-        height: 80px;
-}
-#restart {		 
-	width: auto;
-    padding-bottom: auto;
-    height: 200px;
-}
-#div{
-	height:100px;
-}
-
-#footer {
-	text-align: center;
-	font-size: 18px;
-    box-sizing: border-box;
-    position: fixed;
-    bottom:0px;
-	font-family: cursive;
-    width: 100%;
-    color: #093b45;
-    background-color: gainsboro
-}
-
-
-
-</style>
-
-<script type="text/javascript">
-	function change1() {
-		document.getElementById('png1').src="dev.png"
-	}
-	function change2() {
-		document.getElementById('png2').src="build.png"
-	}
-	function change3() {
-		document.getElementById('png3').src="dep.png"
-	}
-	function back_to_the_future(){
-		document.getElementById('png1').src="dev2.png";
-		document.getElementById('png2').src="build2.png";
-		document.getElementById('png3').src="dep2.png";
-	}
-    function detect_sub(){
-
-        var a= document.getElementById('upload')["file-input1"].value
-        var b= document.getElementById('upload')["file-input2"].value
-        var c= document.getElementById('upload')["file-input3"].value
-        if (!a || !b || !c){
-        	alert("You must upload all the required SBATs to construct a DevOps pipeline.");
-        	return false
-        }else{
-        	return true;
-        	document.getElementById('upload').submit();
-        	document.window.href='http://10.113.0.2/',1
-        }
-    }
-    function redirect(){
-    	        	document.location.href='http://10.113.0.2/'
-    }
-
-</script>
-
-<title>DevOpser.com</title>
-<body bgcolor="#FFFFF0">
-	<div id="wrapper">
-	<div id= "top"><div id= "head">DevOpser 1.0.0-beta in NTU VAL lab.</div>
-	</div>
-        <div id="header"><img src = "index_devopser.png" style="display:block; margin:auto;" "></div>
-
-        <form name = "form" id= "upload" action="/upload" method="post" enctype="multipart/form-data" onsubmit="return detect_sub()">
-
-         <div id= "fill"></div>
-
-        <div id="box">
-		    <div id="dev"><label for="file-input1"><img src="dev2.png" id="png1"></label><Input name="file" id="file-input1" Type="file" style="display: none;" accept=".yaml" onChange="change1()" ></div>
-            <div id="dev"><label for="file-input2"><img src="build2.png" id="png2"></label><Input name="file" id="file-input2" Type="file" style="display: none;" accept=".yaml" onChange="change2()"></div>
-		    <div id="dev"><label for="file-input3"><img src="dep2.png" id="png3"></label><Input name="file" id="file-input3" Type="file" style="display: none;" accept=".yaml" onChange="change3()"></div>
+        <div class="fig-wrap"">
+        <!--img class="img_src" src="img/20280435_1417979038282647_8427177927694474359_o.jpg" -->
         </div>
-         
-        <div id ="start"><label for ="submit"><img src="start4.png" onMouseOut="this.src='start4.png'" onMouseOver="this.src='start3.png'" style="display:block; margin:auto;" ></label><button id="submit" name="submit" type="submit" value = "submit" style="display: none;" onclick=" return detect_sub()"/>
-        </div>
-       <div id="restart"><label for="reset"><img src="restart2.png" style="display:block; margin:auto;" onMouseOut="this.src='restart2.png'" onMouseOver="this.src='restart.png'"></label> <Input name="resettest" id="reset" Type="reset" style="display: none;" onClick="back_to_the_future()"    > </div>
-        </form>
-     <div id= "tem" ></div>
-     <div id="footer"> Arimura Kasumi©2017</div>
-     </div>
 
-	         
+        <div class="contain-wrap">
+            <div class="container">
+                <section>
+                    <h2 id="About" class="target" style=" color:#2F4F4F">About me</h2>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3>Hi, I'm Chi-Wen (ACICULA) Chen, a rookie web designer, software engineer in Taiwan.</h3>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+                 <section >
+                    <h2 style=" color:#2F4F4F">Education</h2>
+                    <div class="row">
+
+                        <div id="ms">
+                        <img src ="img/ntu.png" style="width:100px">
+                            <h4>M.S., Electrical Engineering, 2015-2017</h4>
+                                <h5>National Taiwan University</h5>
+                        </div>
+                        <div id="bs">
+                        <img src ="img/ncku.png" style="width:100px">
+                            <h4>B.S., Department of Photonics, 2011-2015</h4>
+                                <h5>National Chung Kung University</h5>
+
+                        </div>
+                    </div>
+                </section>          
+            </div>
+        </div>
+ 
 </body>
 
 </html>
