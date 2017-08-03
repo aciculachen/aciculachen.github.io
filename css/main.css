@@ -28,13 +28,13 @@
 
 .img_src {
 
-    width: 35%;
+    width:35vw;
     height: auto;
     vertical-align: middle;
 }
 
 .fig-wrap {
-    height: 600px;
+    height: 35vw;
     text-align: center;
     box-sizing: border-box;
     background-color: #66CDAA;
@@ -82,7 +82,7 @@ p,h2,h3,h4,h5,li{
 li{
 }
 h2{
-    padding-top: 100px;
+    padding-top: 10vh;
     padding-bottom: 20px;
     font-weight:bold;
 }
