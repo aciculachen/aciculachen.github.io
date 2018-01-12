@@ -4,18 +4,26 @@
     padding: 1em 0;
     font-size: 180%;
     font-weight: 400;
-    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+    font-family: Brunel-Deck-Semibold,Georgia, sans-serif
 }
 
+
+.navbar-brand{
+ font-family:Brunel-Deck-Semibold,Georgia;
+ font-size:3em;
+ padding-left: 10px;
+ padding-top: 10px;
+}
 .navbar-default {
     background-color: #f8f8f8;
     border-color: #e7e7e7;
-    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif color: #3CB371;
+    font-family:Brunel-Deck-Semibold,Georgia, sans-serif color: #3CB371;
 }
 
 
 .navbar-default .navbar-nav>li>a {
-    color: #3CB371
+     color:#2F4F4F;
+     font-family:Brunel-Deck-Semibold,Georgia;
 }
 
 .navbar-fixed-top .navbar-collapse,
@@ -37,13 +45,25 @@
     height: 35vw;
     text-align: center;
     box-sizing: border-box;
-    background-color: #66CDAA;
+    background-color: #8cd98c;
 }
 
-.contain-wrap {}
-
+.contain-wrap {
+}
+.Intro{
+    font-family:Brunel-Deck-Semibold,Georgia,serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color:#2F4F4F;
+}
 .col-sm-12 {
     color: #2F4F4F;
+    margin-bottom: 10px;
+}   
+
+#about{
+    text-align: center;
+    padding-top: 20px;
 }
 
 #ms {
@@ -59,7 +79,7 @@
 }
 
 footer {
-    background-color:   #66CDAA;
+    background-color:#e6ffe6;
     bottom: 0px;
     width: 100%;
     padding-bottom: 0px;
@@ -68,23 +88,29 @@ footer {
 
 footer p {
     text-align: center;
-    color: #2F4F4F;
+    color:#2F4F4F;
     font-size: 1em;
     font-weight: 400;
-    margin-top: 60px;
+    #margin-top: 60px;
+    #margin-bottom: 20px;
     padding: 2.5em 0 0;
-    font-family: adobe-garamond-pro,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family:  Brunel-Deck-Semibold,Georgia,serif;
 }
 
 p,h2,h3,h4,h5,li{
-    font-family: adobe-garamond-pro,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family:Brunel-Deck-Semibold,Georgia,serif;
+     font-weight:lighter;
+     padding-bottom: 20px;
+     padding-top: 10px;
 }
 li{
 }
 h2{
-    padding-top: 10vh;
-    padding-bottom: 20px;
-    font-weight:bold;
+    #padding-top: 10vh;
+    #padding-bottom: 20px;
+    font-weight:300;
+    font-family:Georgia,serif;
+    #margin: auto;
 }
 
 .btn-primary {
