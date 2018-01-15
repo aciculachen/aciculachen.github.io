@@ -41,12 +41,12 @@ a:hover {
 }
 
 #contain:hover{
-        background-color: #38610B;
+        #background-color: #38610B;
 }
 
 #contain{
 
-    height: 1000px; background-color: #ACFA58; text-align: center; padding-top:500px;font-size:100px; color: white;
+    height: 1000px; background-color: #ACFA58; text-align: center; padding-top:500px;font-size:100px; color: #38610B;
 }
 img {
     border: 0;
