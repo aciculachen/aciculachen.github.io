@@ -1,0 +1,323 @@
+/*
+QQ
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Verdana, Sans-Serif;
+    font-size: 17px;
+    line-height: 32px;
+    color: #242424;
+}
+
+a {
+    transition: 0.25s ease;
+    color: #3e9776;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#page {
+    min-width: 320px;
+    transition: right 0.25s ease;
+    position: relative;
+    right: 0;
+}
+
+.section {
+    position: relative;
+}
+
+.section>div {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#header {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 10px;
+}
+
+#header:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background-color:#38610B;
+}
+
+#header>div {
+    position: relative;
+    height: 200px;
+    padding-top: 45px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#header .logo {
+    width: 375px;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+}
+
+#header .logo img {
+    display: block;
+}
+
+#header nav {
+    position: absolute;
+    font-family: 'Oswald', Arial, sans-serif;
+    top: 70px;
+    left: 40px;
+    right: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 5;
+}
+
+#header nav ul {
+    display: inline-block;
+}
+
+#header nav li {
+    display: inline-block;
+    margin: 0 20px;
+    width: 100px;
+    position: relative;
+}
+
+#header nav li:after {
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -20px;
+    width: 40px;
+    height: 2px;
+    background: green;
+    content: "";
+    display: none;
+}
+
+#header nav li:hover:after,
+#header nav li.current-menu-item:after,
+body.post-type-archive-guide #header nav li.guides:after,
+body.single-guide #header nav li.guides:after,
+body.blog #header nav li.blog:after {
+    display: block;
+}
+
+#header nav a {
+    color: #232323;
+    display: inline-block;
+    padding: 70px 0 0 0;
+    background: url(../img/profile.png) no-repeat center -10px;
+    text-decoration: none;
+    width: 85px;
+}
+
+#header nav li.edu {
+    margin-right: 290px;
+}
+
+#header nav li.edu a {
+    background: url(../img/education.png) no-repeat center -10px;
+    width: 85px;
+}
+
+#header nav li.contact {
+    margin-left: 290px;
+}
+
+#header nav li.contact a {
+    background: url(../img/contact.png) no-repeat center -12px;
+    width: 80px;
+}
+
+#header nav li.cv a {
+    background: url(../img/cv.png) no-repeat center -10px;
+    width: 80px;
+}
+#footer > div {padding-bottom: 30px; font-size: 13px; line-height: 17px; color: #8e8e8e; position: relative;}
+
+#footer .legal{
+    text-align: center;
+    padding-top: 20px
+}
+@media only screen and (max-width: 1200px) {
+    #header nav li.edu {
+        margin-right: 240px;
+    }
+    #header nav li.contact {
+        margin-left: 240px;
+    }
+    img{
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #header nav {
+        left: 20px;
+        right: 20px;
+    }
+    #header nav li.edu {
+        margin-right: 230px;
+    }
+    #header nav li.contact {
+        margin-left: 230px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #header nav li {
+        margin: 0 10px;
+    }
+    #header nav li.edu {
+        margin-right: 210px;
+    }
+    #header nav li.contact {
+        margin-left: 210px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #header>div {
+        height: 320px;
+    }
+    #header .search {
+        display: none;
+    }
+    #header nav {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        padding: 40px 0 0 0;
+    }
+    #header nav li,
+    #header nav li.edu,
+    #header nav li.contact {
+        width: auto;
+        margin: 0 60px;
+    }
+    .section>div {
+        padding-left: 40px;
+        padding-right: 40px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 900px) {}
+
+@media only screen and (max-width: 850px) {
+    #header nav li,
+    #header nav li.edu,
+    #header nav li.contact {
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #header nav li,
+    #header nav li.edu,
+    #header nav li.contact {
+    margin: 0 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #header>div {
+        height: 260px;
+    }
+    #header .logo {
+        width: 300px;
+    }
+    #header nav {
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: normal;
+        margin: 0 -20px;
+        padding: 0;
+    }
+    #header nav a {
+        padding: 70px 0 0 0;
+    }
+    #header nav li.edu {
+        margin: 0 0 0 -20px;
+    }
+    #header nav li.contact {
+        margin: 0 0px;
+    }
+    #header nav li.cv {
+        margin: 0 0px;
+    }
+    #header nav li {
+        margin: 0 0px;
+    }
+    #header nav li a {
+        background-size: 60px;
+        background-position: 10px;
+    }
+
+    #header nav li.edu a {
+        background-size: 60px;
+        background-position:  10px;
+    }
+    #header nav li.contact a {
+        background-size: 60px;
+        background-position: 10px;
+    }
+    #header nav li.cv a {
+        background-size: 60px;
+        background-position: 10px;
+   }
+    #footer .legal {display: block; margin: 0px; height:40px; padding: 10px;}
+
+
+}
