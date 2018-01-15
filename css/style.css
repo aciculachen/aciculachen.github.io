@@ -158,7 +158,7 @@ nav ul {
 
 body.post-type-archive-guide #header nav li.cv:after,
 body.single-guide #header nav li.cv:after,
-body.blog #header nav li.edu:after {
+body.edu #header nav li.edu:after {
     display: block;
 }
 
