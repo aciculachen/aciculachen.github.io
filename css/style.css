@@ -40,6 +40,14 @@ a:hover {
     text-decoration: underline;
 }
 
+#contain:hover{
+        background-color: #38610B;
+}
+
+#contain{
+
+    height: 1000px; background-color: #ACFA58; text-align: center; padding-top:500px;font-size:100px; color: white;
+}
 img {
     border: 0;
     max-width: 100%;
@@ -105,6 +113,7 @@ nav ul {
 
 #header .logo img {
     display: block;
+    padding-top: 20px;
 }
 
 #header nav {
@@ -139,16 +148,17 @@ nav ul {
     margin-left: -20px;
     width: 40px;
     height: 2px;
-    background: green;
+    background: #38610B;
     content: "";
     display: none;
 }
 
 #header nav li:hover:after,
 #header nav li.current-menu-item:after,
-body.post-type-archive-guide #header nav li.guides:after,
-body.single-guide #header nav li.guides:after,
-body.blog #header nav li.blog:after {
+
+body.post-type-archive-guide #header nav li.cv:after,
+body.single-guide #header nav li.cv:after,
+body.blog #header nav li.edu:after {
     display: block;
 }
 
@@ -191,14 +201,12 @@ body.blog #header nav li.blog:after {
 }
 @media only screen and (max-width: 1200px) {
     #header nav li.edu {
-        margin-right: 240px;
+        margin-right: 230px;
     }
     #header nav li.contact {
-        margin-left: 240px;
+        margin-left: 230px;
     }
-    img{
-        padding-top: 20px;
-    }
+
 }
 
 @media only screen and (max-width: 1100px) {
