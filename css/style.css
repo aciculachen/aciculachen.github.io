@@ -23,7 +23,7 @@ body {
 }
 
 body {
-    font-family: 'Open Sans', Arial, Verdana, Sans-Serif;
+    font-family:  Consolas,Vintage,Arial, sans-serif;
     font-size: 17px;
     line-height: 32px;
     color: #242424;
@@ -39,15 +39,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-#contain:hover{
-        #background-color: #38610B;
-}
-
-#contain{
-
-    height: 1000px; background-color: #ACFA58; text-align: center; padding-top:500px;font-size:100px; color: white;
-}
 img {
     border: 0;
     max-width: 100%;
@@ -60,6 +51,10 @@ nav ul {
     list-style-type: none;
 }
 
+#contain{
+
+    height: 1000px; text-align: center; padding-top:500px;font-size:100px; color: white;
+}
 #page {
     min-width: 320px;
     transition: right 0.25s ease;
@@ -83,7 +78,7 @@ nav ul {
     position: relative;
     display: block;
     background-color: white;
-    z-index: 10px;
+    z-index: 1;
 }
 
 #header:before {
@@ -93,7 +88,7 @@ nav ul {
     left: 0;
     right: 0;
     height: 15px;
-    background-color:#38610B;
+    background-color:#f2f2f2;
 }
 
 #header>div {
@@ -116,9 +111,10 @@ nav ul {
     padding-top: 20px;
 }
 
+
 #header nav {
     position: absolute;
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family:  Consolas,Vintage,Arial, sans-serif;
     top: 70px;
     left: 40px;
     right: 40px;
@@ -176,12 +172,12 @@ body.edu #header nav li.edu:after {
 }
 
 #header nav li.edu a {
-    background: url(../img/education.png) no-repeat center -10px;
+    background: url(../img/education.png) no-repeat center -12px;
     width: 85px;
 }
 
 #header nav li.contact {
-    margin-left: 290px;
+    margin-left: 250px;
 }
 
 #header nav li.contact a {
@@ -193,11 +189,40 @@ body.edu #header nav li.edu:after {
     background: url(../img/cv.png) no-repeat center -10px;
     width: 80px;
 }
+:target ~ #home{
+   visibility:hidden;
+   margin-top: -500px; 
+
+}
+#tab-1:target ~ #tab > div.about,
+#tab-2:target ~ #tab > div.edu,
+#tab-3:target ~ #tab > div.contact{
+  visibility:visible;
+  height:500px;
+  background: #fff;
+  z-index: 1;
+}
+
+#tab>div {
+  height:0;
+  clear:both;
+  overflow:hidden;
+  visibility:visible;
+  color: white;
+  font-family: Consolas,Vintage,Arial, sans-serif;
+  font-size:20px; line-height:40px ;
+  padding :0 250px ;
+
+}
+#home {
+    background: #111109;height: 500px; z-index: -1; padding:0 250px;font-size:20px; line-height:40px ;color: white; font-family: Consolas,Vintage,Arial, sans-serif;
+}
 #footer > div {padding-bottom: 30px; font-size: 13px; line-height: 17px; color: #8e8e8e; position: relative;}
 
 #footer .legal{
     text-align: center;
-    padding-top: 20px
+    padding-top: 20px;
+    height:30px;
 }
 @media only screen and (max-width: 1200px) {
     #header nav li.edu {
@@ -206,8 +231,12 @@ body.edu #header nav li.edu:after {
     #header nav li.contact {
         margin-left: 230px;
     }
+    #header .logo{
+           width: 375px;
+    }
 
 }
+
 
 @media only screen and (max-width: 1100px) {
     #header nav {
@@ -215,10 +244,10 @@ body.edu #header nav li.edu:after {
         right: 20px;
     }
     #header nav li.edu {
-        margin-right: 230px;
+        margin-right: 200px;
     }
     #header nav li.contact {
-        margin-left: 230px;
+        margin-left: 200px;
     }
 }
 
@@ -227,26 +256,30 @@ body.edu #header nav li.edu:after {
         margin: 0 10px;
     }
     #header nav li.edu {
-        margin-right: 210px;
+        margin-right: 200px;
     }
     #header nav li.contact {
-        margin-left: 210px;
+        margin-left: 200px;
     }
+       #home{
+        padding: 0 150px;
+    }
+        #tab>div {
+        padding:0 150px;
+    }     
 }
 
 @media only screen and (max-width: 950px) {
     #header>div {
-        height: 320px;
-    }
-    #header .search {
-        display: none;
+        height: 150px;
     }
     #header nav {
         position: relative;
         top: auto;
         left: auto;
         right: auto;
-        padding: 40px 0 0 0;
+        padding: 20px 0 0 0;
+        margin-bottom: 40px;
     }
     #header nav li,
     #header nav li.edu,
@@ -255,8 +288,7 @@ body.edu #header nav li.edu:after {
         margin: 0 60px;
     }
     .section>div {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding:0 40px;
         overflow: hidden;
     }
 }
@@ -269,19 +301,31 @@ body.edu #header nav li.edu:after {
     #header nav li.contact {
         margin: 0 40px;
     }
+
+
+    #home{
+        padding: 0 100px;
+        font-size:18px; line-height:32px ;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     #header nav li,
     #header nav li.edu,
     #header nav li.contact {
-    margin: 0 18px;
+    margin: 0 15px;
+    }
+    #home{
+        padding:0 50px;
+    }
+    #tab>div {
+        padding:0 50px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 510px) {
     #header>div {
-        height: 260px;
+        height: 150px;
     }
     #header .logo {
         width: 300px;
@@ -290,8 +334,8 @@ body.edu #header nav li.edu:after {
         font-size: 13px;
         line-height: 17px;
         letter-spacing: normal;
-        margin: 0 -20px;
         padding: 0;
+        margin-bottom: 40px;
     }
     #header nav a {
         padding: 70px 0 0 0;
@@ -301,12 +345,15 @@ body.edu #header nav li.edu:after {
     }
     #header nav li.contact {
         margin: 0 0px;
+        margin-left: -10px;
     }
     #header nav li.cv {
         margin: 0 0px;
+        margin-left: -20px;
     }
     #header nav li {
-        margin: 0 0px;
+        margin: 0;
+        margin-left: -15px;
     }
     #header nav li a {
         background-size: 60px;
@@ -314,8 +361,8 @@ body.edu #header nav li.edu:after {
     }
 
     #header nav li.edu a {
-        background-size: 60px;
-        background-position:  10px;
+        background-size: 65px;
+        background-position: 10px;
     }
     #header nav li.contact a {
         background-size: 60px;
@@ -324,8 +371,17 @@ body.edu #header nav li.edu:after {
     #header nav li.cv a {
         background-size: 60px;
         background-position: 10px;
+   
    }
-    #footer .legal {display: block; margin: 0px; height:40px; padding: 10px;}
+   #home{
+    padding:0 40px;
+    font-size:10px; line-height:25px ;
+   }
+   #tab>div {
+    padding:0 40px;
+    font-size:10px; line-height:25px ;
+   }
+    #footer .legal {display: block; margin: 0px; height:50px; padding: 10px; font-size: 5px}
 
 
 }
