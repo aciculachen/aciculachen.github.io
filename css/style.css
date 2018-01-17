@@ -329,6 +329,9 @@ body.edu #header nav li.edu:after {
     #header .logo {
         width: 300px;
     }
+    #header .logo img {
+    padding-top: 20px;
+    }
     #header nav {
         font-size: 13px;
         line-height: 17px;
