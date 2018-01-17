@@ -94,9 +94,8 @@ nav ul {
 #header>div {
     position: relative;
     height: 200px;
-    padding-top: 45px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 30px;
+
 }
 
 #header .logo {
@@ -108,13 +107,13 @@ nav ul {
 
 #header .logo img {
     display: block;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 
 #header nav {
     position: absolute;
-    font-family:  Consolas,Vintage,Arial, sans-serif;
+    font-family:  Oswald,Consolas,Vintage,Arial, sans-serif;
     top: 70px;
     left: 40px;
     right: 40px;
@@ -182,12 +181,12 @@ body.edu #header nav li.edu:after {
 
 #header nav li.contact a {
     background: url(../img/contact.png) no-repeat center -12px;
-    width: 80px;
+    width: 85px;
 }
 
 #header nav li.cv a {
     background: url(../img/cv.png) no-repeat center -10px;
-    width: 80px;
+    width: 85px;
 }
 :target ~ #home{
    visibility:hidden;
@@ -285,7 +284,7 @@ body.edu #header nav li.edu:after {
     #header nav li.edu,
     #header nav li.contact {
         width: auto;
-        margin: 0 60px;
+        margin: 0 45px;
     }
     .section>div {
         padding:0 40px;
@@ -334,43 +333,38 @@ body.edu #header nav li.edu:after {
         font-size: 13px;
         line-height: 17px;
         letter-spacing: normal;
-        padding: 0;
-        margin-bottom: 40px;
+        padding:30px 0 0 0;
+       margin-top:-80px;
     }
     #header nav a {
         padding: 70px 0 0 0;
     }
-    #header nav li.edu {
-        margin: 0 0 0 -20px;
+
+    #header nav li, #header nav li.edu,#header nav li.contact, #header nav li.cv {
+        margin: 0 5px;
     }
-    #header nav li.contact {
-        margin: 0 0px;
-        margin-left: -10px;
-    }
-    #header nav li.cv {
-        margin: 0 0px;
-        margin-left: -20px;
-    }
-    #header nav li {
-        margin: 0;
-        margin-left: -15px;
-    }
+
     #header nav li a {
-        background-size: 60px;
-        background-position: 10px;
+        background-size: 50px;
+        background-position: center;
+        font-size: 10px;
+        width: 60px
     }
 
     #header nav li.edu a {
-        background-size: 65px;
-        background-position: 10px;
+        background-size: 55px;
+        background-position: center;
+                width: 60px
     }
     #header nav li.contact a {
-        background-size: 60px;
-        background-position: 10px;
+        background-size: 50px;
+        background-position: center;
+                width: 60px
     }
     #header nav li.cv a {
-        background-size: 60px;
-        background-position: 10px;
+        background-size: 50px;
+        background-position: center;
+                width: 60px
    
    }
    #home{
