@@ -5,61 +5,301 @@
 <head>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <title>Kevin Chen</title>
-    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1e1e533f9.js" crossorigin="anonymous"></script>
+
+	<!-- favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- google font -->
+    <link href='https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+TC&family=Noto+Serif+TC:wght@600&family=Open+Sans:wght@400;500&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap' rel="stylesheet">  
+    <!-- my CSS -->
+    <!--<link href="css/style.css" rel="stylesheet"> -->
 </head>
 
 <body>
+	<div id = "root">
+		<div id = "app">
+			<button id="toggler" type="button" class="navbar-tiggler">
+				<span class="navbar-toggler-icon"></span>			
+			</button>
+			<div id="container"> <!--my web content -->
+				<div id="sidebar">
+					<a href="#"><img src = "img\profile.png" class="logo"></a>
+					<div class="narbar-text">
+					<h>Kevin M. Chen</h>
+					<p>A Ph.D. Student</p>
+					</div> 
 
-    <div id="page">
-    <span id="tab-1" style="display: none">1</span>
-    <span id="tab-2" style="display: none">2</span>
-    <span id="tab-3" style="display: none">3</span>
-    <div id ="tab">    
-        <header id="header" class="section" role="banner">
-                <div class="logo"><a href="#home"><img src="img/stdlogo.png" alt="Acicula"/></a>
-                </div>
-                <nav>
-                    <ul id="primary-nav" class="">
-                        <li id="001" class="prof menu-item menu-item-type-post_type menu-item-object-page 001"><a href="#tab-1">About</a></li>
-                        <li id="002" class="edu menu-item menu-item-type-post_type menu-item-object-page 002"><a href="#tab-2">Experience</a></li>
-                        <li id="003" class="contact menu-item menu-item-type-post_type menu-item-object-page 003"><a href="#tab-3">Publications</a></li>
-                        <li id="004" class="cv menu-item menu-item-type-post_type menu-item-object-page 004"><a href="CV(2p).pdf" target="_blank" >Hobbies </a></li>
-                    </ul>   
-                </nav>
-        </header>
-        <div id="tab-content-1" class="about" style="background-color:  #111109;">
-                             <br>"Hi, I'm Kevin Michael (Acicula) Chen, or 陳啟文 (Chi Wen Chen).<br> 
-                Currently, I am a Full Time Research Assistant with the Research Center for Information Technology Innovation (CITI), Academia Sinica, Taipei, Taiwan. Soon, I will soon attend the Ohio State University (OSU) for my PhD jounary. <br>
-                My research interests are Deep Learning, Interpretable Machine Learning, Wireless Signal Recognition for IoT, Network Communication, Signal Processing. <br>
-                Also, I like to play guitar (John Mayer's BIG fan!)."<br>
-        </div>
-        <div id="tab-content-2" class="edu" style="background-color:#111109">
-            <br>
-            Education<br>
-            MS in EECS, National Taiwan University, 2017<br>
-            BS in Photonics, National Cheng Kung University, 2015<br>
-            Employment<br>
-            Military Service at Transportation Bureau of Tainan City Government 2017-2018<br>
-            Academia Sinica Research Assistant 2019-2021
-        </div>
-        <div id="tab-content-3" class="contact" style="background-color: #111109">
- <br><br><span style="color: #ff0066; ">public </span> <span style="font-style:oblique; color: #00ccff">class</span> <span style="color:#99ff33">ContactMe</span> {<br>
-        &nbsp;&nbsp; <span style="color: #ff0066; ">public static</span> <span style="font-style:oblique;color: #00ccff""> void </span><span style="color: #99ff33">main</span>(<span style="font-style:oblique;color: #00ccff">String</span>[]<span style="font-style:oblique;color: #ff6600"> args</span> ) { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.<span style="color:#00ccff ">print</span>(<span style="color:#ffff99">"E-Mail: cwchen@iis.sinica.edu.tw"</span>);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>}
-        </div>
-    </div>
-        <div id="home" class="home" style="">
-                <br>"Hi, I'm Kevin Michael Chen, or 陳啟文 (Chi Wen Chen).<br> 
-                Currently, I am a Full Time Research Assistant with the Research Center for Information Technology Innovation (CITI), Academia Sinica, Taipei, Taiwan. And I will soon attend the Ohio State University (OSU) for my PhD jounary. <br>
-                My research interests are Deep Learning, Interpretable Machine Learning, Wireless Signal Recognition for IoT, Network Communication, Signal Processing. <br>
-                Also, I like to play guitar (John Mayer's BIG fan!)."<br>
-        </div>
+					<div class="nav__list">
+					<div class="nav__item"><a href="#about"  class="nav-link active">About</a></div>
+					<div class="nav__item"><a href="#experience"  class="nav-link active">Experience</a></div>
+					<div class="nav__item"><a href="#research"  class="nav-link active">Research</a></div>
+					<div class="nav__item"><a href="#publications"  class="nav-link active">Publication</a></div>
+					</div> <!--/flex-colum nav nav-pills -->
 
-        <footer id="footer" class="section">
-            <div class="legal">
-               2018 - Acicula Chen &copy; All right reserved.
-            </div>
-        </footer>
-    </div>
-</body>
+					<div class="">
+						<div class="social-list-block">
+							<div class="navbar-text text-nowrap p-0" style="height: 2rem;">&nbsp;</div>
+							<div class="social-list"> 
+							<a href="mailto:am3000520@gmail.com" class="social-list__link"  target=_blank> 
+							<i class="fas fa-envelope"></i></a>
+							<a href="https://github.com/aciculachen" class="social-list__link"  target=_blank> 
+							<i class="fab fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/kevin-chen-704535125/" class="social-list__link"  target=_blank> 
+							<i class="fab fa-linkedin"></i></a>
+							<a href="https://scholar.google.com.tw/citations?user=Ty1xu2Y0FfcC&hl=en" class="social-list__link" target=_blank >
+							<i class="fas fa-graduation-cap"></i></a>
+							</div> <!--/social-list -->
+						</div><!--/social-list-block -->
+						<br>
+						<div class = "legal">&copy Acicula Chen; All right reserved.</div>
+
+					</div>
+				</div> <!--/sidebar -->
+				<div content>
+					<div class="content__container">
+						<span id="about"></span>
+						<div class = "section__about">
+							<header class="text-center">
+								<h1> Kevin Michael Chen</h1>
+								<h5> Research Assistant,
+								<a href=""> OSU ECE</a>
+								</h5>
+							</header>
+							<p>Still "Everything happens for a reason" Is no reason not to ask myself.</p>
+						</div>
+
+						<span id="experience"></span>
+						<div class="container">
+							<div class="row">
+								<div class="section__experience--edu">
+									<header class="text-center"><h2>Education</h2></header>
+									<div class="card">
+										<div class="card__logo"></div>
+										<div>
+											<h4>
+												"2015-2017"
+												"National Taiwan University (NTU)"
+												"Master of Science"
+											</h4>
+											<div class="">
+												<a href="https://www.ee.ntu.edu.tw/graduate/english/" target=_blank>	Graduate Institute of Electrical Engineering, NTU, Taipei, Taiwan</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="card">
+										<div class="card__logo"></div>
+										<div>
+											<h4>
+												"2011-2015"
+												"National Cheng Kung University (NCKU)"
+												"Bachelor of Science"
+											</h4>
+											<div class="">
+												<a href="https://researchoutput.ncku.edu.tw/en/organisations/department-of-photonics/" target=_blank>	Department of Photonics, NCKU, Tainan, Taiwan</a>
+											</div>
+										</div>										
+									</div>
+								</div><!--/section__experience--edu-->
+
+								<div class="section__experience--employ">
+									<header class="text-center"><h2>Affiliation</h2></header>
+									<div class="card">
+										<div class="card__logo"></div>
+										<div>
+											<h4>
+												"2019-2021"
+												"Academia Sinica"
+												"Research Assistant"
+											</h4>
+											<div class="">
+												<a href="https://www.citi.sinica.edu.tw/en/internal/service-systems" target=_blank> Research Center for Information Technology Innovation (CITI), Academia Sinica, Taipei, Taiwan</a>
+											</div>
+										</div>											
+									</div><!--/card -->
+									<div class="card">
+										<div class="card__logo"></div>
+										<div>
+											<h4>
+												"2017-2018"
+												"Tainan City Goverment"
+												"Substitute Military Service"
+											</h4>
+											<div class="">
+												<a href="https://traffic.tainan.gov.tw/English/" target=_blank> Bureau of Transportation, Tainan City Government, Tainan, Taiwan</a>
+											</div>
+
+										</div>
+									</div> <!--/card -->	 
+									<div class="border rounded">
+										<button type="button" class="collapse_opener">
+											<srg></srg>
+											<span class="collapse_OpernerText">
+												::before
+												::after
+											</span>
+											<srg></srg>
+										</button>
+										<div class="collapse">
+
+											<div class="CardB">
+												<div class="card__logo"></div>
+												<div>
+													<h4>
+														"2016-2017"
+														"NTU Guitar Club"
+														"Member"
+													</h4>
+												</div>
+											</div><!--/card -->
+
+											<div class="CardB">
+												<div class="card__logo"></div>
+												<div>
+													<h4>
+														"2010-Present"
+														"Guitarist"
+														"Major in <a href="https://www.youtube.com/watch?v=uhYn7ryaWNE" target=_blank> John Mayer </a>"
+													</h4>
+													<div class="">
+													check out <a href="https://www.instagram.com/om28jm173/" target=_blank>om28jm173</a> instagram page
+												</div>
+												</div>
+											</div><!--/card -->
+											<div class="CardB">
+												<div class="card__logo"></div>
+												<div>
+													<h4>
+														"2011-Present"
+														"<a href="https://www.martinguitar.com//" target=_blank> Martin Guitar&copy</a> Owner"
+													</h4>
+												<div class="guitar list">
+													"Martin HD-28" 2011-present
+													"Martin D-18 GE" 2016-2021
+													"Martin OM-28 John Mayer 173 of 404" 2020-present
+												</div>
+												</div>
+											</div><!--/card -->													
+										</div> <!-- /collapse -->		
+									</div><!--border rounded--->
+								</div><!--/section__experience--employ-->	
+							</div>
+						</div>
+
+						<span id = "research"></span>
+						<div class="section__research">
+							<hearder class="text-center"><h2>My Research</h2></hearder>
+						</div><!--/section__research -->
+
+						<span id = "publications"></span>
+
+						<div class="section__publications">
+							<hearder class="text-center"><h2>Publications</h2></hearder>
+							<div id="publication-globecom-2021" class='CardC'>
+								<div class="row">
+									<div class="d-flex align-items-center">
+										<a href="https://globecom2021.ieee-globecom.org/"target=_blank>GLOBECOM 2021
+											<picture>
+												<img src="">	
+											</picture>
+										</a>
+									</div>
+									<div class='col'>
+										<header>
+											<h4>"A Comparative Study of Deep-Learning-Based Semi-Supervised Device-Free Indoor Localization"</h4>
+											<p> <strong>Kevin M. Chen</strong> and Ronald Y. Chang 
+												<br>
+												2021, IEEE Global Communications Conference, (GLOBECOM2021)
+											</p>
+										</header>
+										
+									</div>
+								</div>
+							</div><!--/publication -->
+
+							<div id="publication-globecom-2020" class='CardC'>
+								<div class="row">
+									<div class="d-flex align-items-center">
+										<a href="https://globecom2020.ieee-globecom.org/"target=_blank>GLOBECOM 2020
+											<picture>
+												<img src="">	
+											</picture>
+										</a>
+									</div>
+									<div class='col'>
+										<header>
+											<h4>"Semi-Supervised Learning with GANs for Device-Free Fingerprinting Indoor Localization"</h4>
+											<p> <strong>Kevin M. Chen</strong> and Ronald Y. Chang 
+												<br>
+												2020, IEEE Global Communications Conference, (GLOBECOM2020)
+											</p>
+										</header>
+										
+									</div>
+								</div>
+							</div><!--/publication -->
+
+							<div id="publication-access" class='CardC'>
+								<div class="row">
+									<div class="d-flex align-items-center">
+										<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639"target=_blank>IEEE Access
+											<picture>
+												<img src="">	
+											</picture>
+										</a>
+									</div>
+									<div class='col'>
+										<header>
+											<h4>"Interpreting Convolutional Neural Networks for Device-Free Wi-Fi Fingerprinting Indoor Localization via Information Visualization"</h4>
+											<p> <strong>Kevin M. Chen</strong>, Ronald Y. Chang, and Shing-Jiuan Liu 
+												<br>
+												2019, IEEE Access
+											</p>
+										</header>
+										
+									</div>
+								</div>
+							</div><!--/publication -->	
+
+							<div id="publication-access" class='CardC'>
+								<div class="row">
+									<div class="d-flex align-items-center">
+										<a href="https://easychair.org/cfp/TCSE2017"target=_blank>TCSE 2017
+											<picture>
+												<img src="">	
+											</picture>
+										</a>
+									</div>
+									<div class='col'>
+										<header>
+											<h4>"Automated Cloud Sandbox Deployment for implementing DevOps"</h4>
+											<p> <strong>Chi-Wen Chen</strong> and Farn Wang
+												<br>
+												2017, Taiwan Conference on Software Engineering, (TCSE2017)
+											</p>
+										</header>
+										
+									</div>
+								</div>
+							</div><!--/publication -->	
+
+						</div><!--/publications list-->
+
+
+
+					</div><!--/content__container -->
+
+				</div> <!--/content -->
+			</div> <!--/container -->
+			<div class= "nav" id="back">
+				<div class="nav__item">
+					<a href="#"></a>
+				</div>
+			</div>
+		</div><!--/app -->
+</div> <!--/root -->
+
+</body>	
+
 
 </html>
