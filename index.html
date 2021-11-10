@@ -10,62 +10,89 @@
 	<!-- favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- google font -->
-    <link href='https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+TC&family=Noto+Serif+TC:wght@600&family=Open+Sans:wght@400;500&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap' rel="stylesheet">  
+    <link href='https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+TC&family=Noto+Serif+TC:wght@600&family=Open+Sans:wght@400;500&family=Source+Sans+Pro&display=swap' rel="stylesheet">  
+    <!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- my CSS -->
-    <!--<link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<div id = "root">
 		<div id = "app">
-			<button id="toggler" type="button" class="navbar-tiggler">
+			<button id="toggler" type="button" class="navbar-toggler">
 				<span class="navbar-toggler-icon"></span>			
 			</button>
 			<div id="container"> <!--my web content -->
 				<div id="sidebar">
-					<a href="#"><img src = "img\profile.png" class="logo"></a>
-					<div class="narbar-text">
-					<h>Kevin M. Chen</h>
-					<p>A Ph.D. Student</p>
-					</div> 
+					<div class="navbar text-center d-flex flex-column min-h-100 p-3">
+						<div class="flex-fill w-1000">
+							<div class="p-0 mx-0 my-3 navbar-brand">
+								<a href="#">
+									<img src="img/profile.png">
+								</a>
+							</div>
 
-					<div class="nav__list">
-					<div class="nav__item"><a href="#about"  class="nav-link active">About</a></div>
-					<div class="nav__item"><a href="#experience"  class="nav-link active">Experience</a></div>
-					<div class="nav__item"><a href="#research"  class="nav-link active">Research</a></div>
-					<div class="nav__item"><a href="#publications"  class="nav-link active">Publication</a></div>
-					</div> <!--/flex-colum nav nav-pills -->
+							<div class="px-3 py-0 navbar-text">
+								<img src="img/logo.png" width="100" padding-bottom="10px">
+								<p>A Ph.D. Student</p>								
+							</div>
 
-					<div class="">
-						<div class="social-list-block">
-							<div class="navbar-text text-nowrap p-0" style="height: 2rem;">&nbsp;</div>
-							<div class="social-list"> 
-							<a href="mailto:am3000520@gmail.com" class="social-list__link"  target=_blank> 
-							<i class="fas fa-envelope"></i></a>
-							<a href="https://github.com/aciculachen" class="social-list__link"  target=_blank> 
-							<i class="fab fa-github"></i></a>
-							<a href="https://www.linkedin.com/in/kevin-chen-704535125/" class="social-list__link"  target=_blank> 
-							<i class="fab fa-linkedin"></i></a>
-							<a href="https://scholar.google.com.tw/citations?user=Ty1xu2Y0FfcC&hl=en" class="social-list__link" target=_blank >
-							<i class="fas fa-graduation-cap"></i></a>
-							</div> <!--/social-list -->
-						</div><!--/social-list-block -->
-						<br>
-						<div class = "legal">&copy Acicula Chen; All right reserved.</div>
+							<div class="nav flex-column nav-pills">								
+								<div class="nav-item">
+									<a href="#about" data-rr-ui-event-key="about" class="nav-link active">About</a>
+								</div>
 
-					</div>
-				</div> <!--/sidebar -->
-				<div content>
+								<div class="nav-item">
+									<a href="#experience" class="nav-link">Experience</a>
+								</div>
+
+								<div class="nav-item">
+									<a href="#research" class="nav-link">Research</a>
+								</div>
+
+								<div class="nav-item">
+									<a href="#publications" class="nav-link">Publications</a>
+								</div>
+								<div class="nav-item">
+									<a href="CV(2p).pdf" class="nav-link" target=_blank>My CV</a>
+								</div>								
+							</div>									
+						</div> <!-- /flex-fill -->
+
+						<div class="w-100 mt-3">
+							<div class ='d-block'>
+								<div class="d-flex justify-content-around my-1">
+									<a href="mailto:am3000520@gmail.com" class="social-list__link"  target=_blank> <i class="fas fa-envelope"></i></a>	
+									<a href="https://github.com/aciculachen" class="social-list__link"  target=_blank> <i class="fab fa-github"></i></a>
+									<a href="https://www.linkedin.com/in/kevin-chen-704535125/" class="social-list__link"  target=_blank> <i class="fab fa-linkedin"></i></a>		
+									<a href="https://scholar.google.com.tw/citations?user=Ty1xu2Y0FfcC&hl=en" class="social-list__link" target=_blank ><i class="fas fa-graduation-cap"></i></a>															
+								</div>
+							</div> <!-- d-block-->
+							<div class="small text-muted">
+								Acicula Chen &copy; All right reserved.
+							</div>
+
+						</div>
+					</div>	
+				</div> <!-- /navbar -->
+				<div id="content">
 					<div class="content__container">
 						<span id="about"></span>
-						<div class = "section__about">
-							<header class="text-center">
-								<h1> Kevin Michael Chen</h1>
-								<h5> Research Assistant,
-								<a href=""> OSU ECE</a>
+						<div class = "Section p-3 p-md-4 p-lg-5 SectionFirst">
+							<header class="mb-3 mb-md-4 text-center">
+								<h1> Kevin Michael Chen <span class="cht">陳啟文</span></h1>
+								<h5> Graduate Research Assistant,
+								<a href="https://ece.osu.edu/"> OSU ECE</a>
 								</h5>
 							</header>
-							<p>Still "Everything happens for a reason" Is no reason not to ask myself.</p>
+							<p> Hello, my name is Kevin Michael Chen, as known as "Acicula" Chen, or Chen Chi-Wenhanzi:<span class="cht">陳啟文</span>). I am currently a Ph.D. student in Electrical and Computer Engineering at <a href="https://ece.osu.edu/">The Ohio State Universitry</a>, advised by <a href="https://parinazn.com/">Prof. Parinaz Naghizadeh</a>  and co-advised by <a href="https://u.osu.edu/yener.5/">Prof. Aylin Yener</a>.</p>
+        					<p> Prior to my PhD study, I had three years of research experience in machine learning and wireless network communication as a fully-time research assistent advised by <a href="https://www.citi.sinica.edu.tw/~rchang/">Prof. Ronlad Y. Chang</a> at <a href="https://www.citi.sinica.edu.tw/en/">Research Center for Information Technology Innovation (CITI)</a>, <a href="https://www.sinica.edu.tw/en">Academia Sinica</a>, Taiwan.</p>
+							<p>Apart from my acadamic activity, I like to play guitars, cooking, and drawing.
+							Still "Everything happens for a reason" Is no reason not to ask myself.</p>
 						</div>
 
 						<span id="experience"></span>
@@ -108,9 +135,22 @@
 										<div class="card__logo"></div>
 										<div>
 											<h4>
+												"2022-present"
+												"The Ohio State University"
+												"Graduate Research Assistant"
+											</h4>
+											<div class="">
+												<a href="https://www.osu.edu/" target=_blank> Electrical and Coumpter Engineering, The Ohio State University, Columbus, Ohio</a>
+											</div>
+										</div>											
+									</div><!--/card -->
+									<div class="card">
+										<div class="card__logo"></div>
+										<div>
+											<h4>
 												"2019-2021"
 												"Academia Sinica"
-												"Research Assistant"
+												"Full-time Research Assistant"
 											</h4>
 											<div class="">
 												<a href="https://www.citi.sinica.edu.tw/en/internal/service-systems" target=_blank> Research Center for Information Technology Innovation (CITI), Academia Sinica, Taipei, Taiwan</a>
@@ -299,6 +339,7 @@
 		</div><!--/app -->
 </div> <!--/root -->
 
+<script src="scripts/main.js"></script>
 </body>	
 
 
