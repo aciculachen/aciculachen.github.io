@@ -22,12 +22,12 @@
 <body>
 	<div id = "root">
 		<div id = "app">
-			<button id="toggler" type="button" class="navbar-toggler">
+			<button id="toggler" type="button" class="navbar-toggler navbar-light btn btn-outline-light">
 				<span class="navbar-toggler-icon"></span>			
 			</button>
-			<div id="container"> <!--my web content -->
+			<div id="container" class=""> 
 				<div id="sidebar">
-					<div class="navbar bg-milk-light text-center d-flex flex-column min-h-100 p-3">
+					<div class="navbar navbar-light bg-navbar text-center d-flex flex-column min-h-100 p-3">
 						<div class="flex-fill w-100">
 							<div class="p-0 mx-0 my-3 navbar-brand">
 								<a href="#">
@@ -37,26 +37,26 @@
 
 							<div class="px-3 py-0 navbar-text">
 								<img src="img/logo.png" class="d-block w-100 mx-auto ">
-								<p>A Ph.D. Student</p>								
+								<p>hello world</p>								
 							</div>
 
-							<div class="nav flex-column nav-pills">								
-								<div class="nav-item">
-									<a href="#about" class="nav-link active">About</a>
+							<div id="sidebar_nav" class="nav flex-column nav-pills">								
+								<div id="nav-item" class="nav-item">
+									<a href="#about" id="nav-link__" class="nav-link active">About</a>
 								</div>
 
 								<div class="nav-item">
-									<a href="#experience" class="nav-link">Experience</a>
+									<a href="#experience" id="nav-link__" class="nav-link">Experience</a>
 								</div>
 
 								<div class="nav-item">
-									<a href="#publications" class="nav-link">Publications</a>
+									<a href="#publications" id="nav-link__" class="nav-link">Publications</a>
 								</div>
 								<div class="nav-item">
-									<a href="#others" class="nav-link">Others</a>
+									<a href="#others" id="nav-link__" class="nav-link">Others</a>
 								</div>
 								<div class="nav-item">
-									<a href="CV(2p).pdf" class="nav-link" target=_blank>My CV</a>
+									<a href="CV(2p).pdf" id="nav-link__" class="nav-link" target=_blank>My CV</a>
 								</div>								
 							</div>									
 						</div> <!-- /flex-fill -->
@@ -99,7 +99,7 @@
 
 									<div class="CardA px-3 d-flex my-1 my-md-3 undefined">	
 										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-											<img src="img/ntu_logo.png" class='w-100'>
+											<img src="img/logos/ntu_logo.png" class='w-100'>
 										</div>
 
 										<div>
@@ -120,7 +120,7 @@
 
 									<div class="CardA px-3 d-flex my-1 my-md-3 undefined">
 										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-											<img src="img/ncku_logo.png" class='w-100'>	
+											<img src="img/logos/ncku_logo.png" class='w-100'>	
 										</div>
 										<div>
 											<h4>
@@ -147,7 +147,7 @@
 
 									<div class="CardA px-3 d-flex my-1 my-md-3 undefined">
 										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-											<img src="img/osu.png" class='w-100'>	
+											<img src="img/logos/osu_logo.png" class='w-100'>	
 										</div>
 										<div>
 											<h4>	
@@ -166,7 +166,7 @@
 
 									<div class="CardA px-3 d-flex my-1 my-md-3 undefined">
 										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-											<img src="img/sinica.png" class='w-100'>	
+											<img src="img/logos/sinica_logo.png" class='w-100'>	
 										</div>
 										<div>
 											<h4>
@@ -188,7 +188,7 @@
 										<div class="collapse"  id="collapse_content">							
 										<div class="CardA px-3 d-flex my-1 my-md-3 undefined">
 										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-											<img src="img/Tainan_City_Government_Logo.png" class='w-100'>	
+											<img src="img/logos/Tainan_City_Government_logo.png" class='w-100'>	
 										</div>
 										<div>
 											<h4>
@@ -204,7 +204,7 @@
 									</div> <!--/card -->			
 											<div class="CardA px-3 d-flex my-1 my-md-3 undefined">
 												<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-													<img src="img/ntu_logo.png" class='w-100'>	
+													<img src="img/logos/ntu_logo.png" class='w-100'>	
 												</div>
 												<div>
 													<h4>
@@ -223,7 +223,7 @@
 
 											<div class="CardA px-3 d-flex my-1 my-md-3 undefined">
 												<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-													<img src="img/TDG_logo.png" class='w-100'>	
+													<img src="img/logos/TDG_logo.png" class='w-100'>	
 												</div>
 												<div>
 													<h4>
@@ -240,7 +240,7 @@
 
 											<div class="CardA px-3 d-flex my-1 my-md-3 undefined">
 												<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
-													<img src="img/ncku_logo.png" class='w-100'>	
+													<img src="img/logos/ncku_logo.png" class='w-100'>	
 												</div>
 												<div>
 													<h4>
@@ -261,27 +261,22 @@
 							</div><!--row--->
 						</div><!--contrainer--->
 
-						<span id = "research"></span>
-						<div class="section__research">
-							<hearder class="text-center"><h2>My Research</h2></hearder>
-						</div><!--/section__research -->
-
 						<span id = "publications"></span>
 						<div class="Section p-3 p-md-4 p-lg-5 Publication_Section__1FBto undefined">
-						<hearder class="mb-3 mb-md-4 text-center"><h2>Publications</h2></hearder>
+							<hearder class="mb-3 mb-md-4 text-center"><h2>Publications</h2></hearder>
 							<div>
 								<div class>
 									<ul class="nav nav-tabs" id="nav-tab" role="tablist" >
 										<li class="nav-item">
-											<a class="nav-link active" id="journal-tab" data-toggle="tab" href="#journal" role="tab" aria-controls="journal" aria-selected="false">Journal Papers</a>
+											<a class="nav__link active" id="journal-tab" data-toggle="tab" href="#journal" role="tab" aria-controls="journal" aria-selected="false">Journal Papers</a>
 										</li>
-										<li role="presentation" class="nav-item">
-											<a class="nav-link" id="conference-tab" data-toggle="tab" href="#conference" role="tab" aria-controls="conference" aria-selected="false">Conference Papers</a>
+										<li class="nav-item">
+											<a class="nav__link" id="conference-tab" data-toggle="tab" href="#conference" role="tab" aria-controls="conference" aria-selected="false">Conference Papers</a>
 										</li>
 									</ul>
 								</div>
 
-								<div class="tab-content pt-5" id = "tab_container">
+								<div class="tab-content" id = "tab_container">
 									<div class="tab-pane fade show active" id="journal" role="tabpanel" aria-labelledby="journal-tab">
 												
 												<div id="publication-ieee-access-2019" class='CardB p-3 p-lg-4 undefined'>
@@ -405,6 +400,137 @@
 								</div><!--/tab_container-->	
 							</div>
 						</div><!--/publications list-->
+
+						<span id = "others"></span>
+						<div class="Section p-3 p-md-4 p-lg-5 Others_Section__1FBto undefined">
+							<hearder class="mb-3 mb-md-4 text-center"><h2>Guitars Collection</h2></hearder>
+								<div>
+									<div class="row row-cols-1 row-cols-md-2">
+										<article id ="om28jm" class="col px-3 my-1 my-md-3">
+											<div class="card mb-3 position-relative">
+												<div class="position-absolute">
+													<span class="badge rounded">2021-</span>
+												</div>
+												<div class="row g-0 ">
+													<div class="col-md-4 text-center p-2 ">
+														<img width="77" height="200" alt="" src="img/guitars/Martin-OM28JM.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+													</div>
+													<div class="col-md-8 d-flex align-items-center">
+														<div class="card-body">
+															<h5 class="card-title">Martin OM-28 John Mayer</h5>
+															<p>This guitar was luckily found and purchased through a friend (also a big fan of John Mayer) working in a guitar shop in Taipei, Taiwan. The guitar is the first official John Mayer Signature model made by Martin and was produced as a limited run of only 404, and I own the #173. The guitar features a solid Engelmann spruce top and solid East Indian rosewood back and sides.</p>
+														</div>
+													</div>											
+												</div>
+											</div>
+										</article>																	
+										<article class="col px-3 my-1 my-md-3">
+											<div class="card mb-3 position-relative">
+												<div class="position-absolute">
+													<span class="badge rounded">2012-</span>
+												</div>
+												<div class="row g-0">
+													<div class="col-md-4 text-center p-2">
+														<img width="77" height="200" alt="" src="img/guitars/Martin-HD28.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+													</div>
+													<div class="col-md-8 d-flex align-items-center">
+														<div class="card-body">
+															<h5 class="card-title">Martin HD-28</h5>
+															<p>This guitar was purchased for celebrating my 20-year-old birthday and is the one that introduces me to Martin Guitar. After years of practicing, at that moment, I thought it is time to have an all-solid guitar, and luckily I found this pre-owned Martin. The guitar features a solid Sitka spruce top and solid East Indian rosewood back and sides.</p>
+														</div>
+													</div>											
+												</div>
+											</div>
+										</article>			
+									</div><!-- end of two col-->
+									<div class="border rounded border-0 ">
+										<button type="button" class="Collapse_Opener collapsed text-center fw-bold w-100 btn btn-milk-light btn-sm" data-toggle="collapse" data-target="#collapse_guitar" aria-expanded="false" aria-controls="collapse_guitar">
+										<span class="Collapse_OpenerText mx-2"></span>
+										</button>
+
+										<div class="mb-3">
+											<div class="collapse"  id="collapse_guitar">
+												<div class="row row-cols-1 row-cols-md-2">
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute">
+																<span class="badge rounded">2011-</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="77" height="200" alt="" src="img/guitars/Yamaha-F310.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">YAMAHA F310</h5>
+																		<p>My first acoustic guitar, which was purchased in a inconspicuous local guitar shop near my home in Tainan, Taiwan.</p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>													
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute top-0 top-rem translate-middle">
+																<span class="badge rounded">2016-</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="77" height="200" alt="" src="img/guitars/Fender-Japan-Strat.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">Fender Japan Stratocaster</h5>
+																		<p></p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>												
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute">
+																<span class="badge rounded disconnected">2016-2021</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="77" height="200" alt="" src="img/guitars/Martin-D18GE.png" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">Martin D-18 Gorden Era</h5>
+																		<p>This guitar was purchased during my graduation trip to Fukuoka, Japan in 2016. The guitar features a solid Adirondack spruce top and Genuine Mahogany back and sides.</p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute top-0 top-rem translate-middle">
+																<span class="badge rounded disconnected">2018-2021</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="77" height="200" alt="" src="img/guitars/Fender-52Tele.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">Fender American Vintage '52 Telecaster</h5>
+																		<p></p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>
+												</div>	<!--two col--->	
+											</div> <!--collpas--->									
+										</div> 
+									</div><!--border rounded--->								
+								</div>
+						</div><!--/section__others -->
+
+
 					</div><!--/content__container -->
 
 				</div> <!--/content -->

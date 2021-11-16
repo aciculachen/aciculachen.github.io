@@ -79,6 +79,10 @@ a:hover{
     color: var(--bs-gray-700);
 }
 
+a, a:hover {
+    text-decoration: none;
+}
+
 
 h1, h2, h3, h4, h5, h6{
     margin-top: 0;
@@ -87,9 +91,14 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     line-height: 1.2;
 }
+
+.fw-bold {
+    font-weight: 700;
+}
 .cht{
     font-family: var(--ff--cht);
 }
+
 
 .row {
     --bs-gutter-x: 1.5rem;
@@ -170,10 +179,8 @@ px
 .me-3 {
     margin-right: 1rem!important;
 }
-.bg-milk-light {
-    --bs-bg-opacity: 1;
-
-
+.bg-navbar {
+    background: #FFF;
 }
 #app #content{
     width: 100%;
@@ -192,7 +199,10 @@ px
     #app #content {
         padding-left: 0px;
     }
-
+    #app #container.toggled #sidebar {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 
@@ -202,6 +212,9 @@ px
     }
     #app #content {
         padding-left: 256px;
+    }
+    #app #toggler {
+    right: -4rem;
     }
 }
 
@@ -258,6 +271,7 @@ px
     opacity: 0%;     
 }
 
+
 .btn-milk-light {
     color: #000;
     background-color: #f1f0eb;
@@ -265,7 +279,42 @@ px
 }
 
 
-
 .App_Content__1SlJH .Section:not(.SectionFirst) {
     border-top: 6px solid #f4f4f4;
 }
+
+
+.nav__link {
+    display: block;
+    padding: 0.5rem 1rem;}
+
+
+.nav-tabs .nav__link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav__link.active {
+    border-color: #dee2e6 #dee2e6 #fff;
+
+}
+
+
+.badge {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 500;
+    line-height: 0.8;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: var(--bs-accent-light);
+}
+
+.badge.disconnected {
+    background-color: var(--bs-gray);
+}
+
