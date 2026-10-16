@@ -1,0 +1,324 @@
+/* 
+   Style 4: Inspired by pbb.wtf
+   Layout: Flexbox (Sidebar + Content)
+   Color Scheme: Dark Navy/White with Blue/Orange accents
+*/
+
+:root {
+    /* Light Mode (Default) */
+    --bg-color: #FFFFFF;
+    --text-color: #343434;
+    --text-muted: #666666;
+    --sidebar-bg: #FFFFFF;
+    --accent-primary: #3498FF;
+    /* Blue */
+    --accent-secondary: #FF965D;
+    /* Orange */
+    --border-color: #E0E0E0;
+    --hover-bg: #F5F7FA;
+
+    /* Spacing */
+    --sidebar-width: 280px;
+    --container-max-width: 1100px;
+
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+    --bg-color: #1A1D24;
+    --text-color: #E9EBF0;
+    --text-muted: #A0A4B0;
+    --sidebar-bg: #1A1D24;
+    --border-color: #2C3038;
+    --hover-bg: #2C3038;
+}
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout Wrapper */
+.layout-wrapper {
+    display: flex;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+    padding: 40px 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    border-right: 1px solid transparent;
+    /* Optional border */
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    /* Rounded rect style from pbb.wtf */
+    object-fit: cover;
+    margin-bottom: 20px;
+    background-color: var(--bg-color);
+    /* Fix for transparent SVGs */
+}
+
+[data-theme="dark"] .profile-img,
+[data-theme="dark"] .logo-img {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: transparent;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.profile-bio {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.tag-badge {
+    display: inline-block;
+    background-color: var(--hover-bg);
+    color: var(--text-muted);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    /* Push to bottom or keep near info */
+    padding-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: var(--accent-primary);
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 40px 60px;
+    width: 100%;
+    /* Ensure it fills space */
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+    text-decoration: none !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-primary);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-primary);
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    padding: 5px;
+}
+
+.theme-btn:hover {
+    color: var(--accent-primary);
+}
+
+/* Sections */
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Signature pbb.wtf Underline Style */
+.section-underline {
+    display: flex;
+    height: 4px;
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.section-underline span:first-child {
+    background-color: var(--accent-secondary);
+    /* Orange */
+    width: 30%;
+}
+
+.section-underline span:last-child {
+    background-color: var(--accent-primary);
+    /* Blue */
+    width: 70%;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Lists & Grid */
+.experinece-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.experience-title {
+    font-weight: 700;
+    display: block;
+}
+
+.experience-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* News List */
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-item {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.news-date {
+    color: var(--text-muted);
+    font-family: monospace;
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+/* Buttons */
+.btn-outline {
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-right: 5px;
+}
+
+.btn-outline:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .layout-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 40px 20px 20px;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+        border-right: none;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .navbar {
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .theme-btn {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
