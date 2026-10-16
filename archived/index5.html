@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Chen</title>
+    <script src="https://kit.fontawesome.com/a1e1e533f9.js" crossorigin="anonymous"></script>
+    <!-- Academicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    <!-- google font -->
+    <link href='https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+TC&family=Noto+Serif+TC:wght@600&family=Open+Sans:wght@400;500&family=Source+Sans+Pro&display=swap' rel="stylesheet">  
+    <!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- my CSS -->
+    <link href="css/style5.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id = "root">
+		<div id = "app">
+			<button id="toggler" type="button" aria-label="Toggle navigation" aria-controls="sidebar" aria-expanded="false" class="navbar-toggler navbar-light btn btn-outline-light">
+				<span class="navbar-toggler-icon"></span>			
+			</button>
+			<div id="container" class=""> 
+				<div id="sidebar">
+					<div class="navbar navbar-light bg-navbar text-center d-flex flex-column min-h-100 p-3">
+						<div class="flex-fill w-100">
+							<div class="p-0 mx-0 my-3 navbar-brand">
+								<a href="#">
+									<img src="img/profile.png" class="d-block w-100 mx-auto " alt="Kevin M. Chen">
+								</a>
+							</div>
+
+							<div class="px-3 py-0 navbar-text">
+								<img src="img/logo.png" class="d-block w-100 mx-auto " alt="Acicula Chen">
+								<p>hello world</p>								
+							</div>
+
+							<div id="sidebar_nav" class="nav flex-column nav-pills">								
+								<div id="nav-item" class="nav-item">
+									<a href="#about" class="nav-link active">About</a>
+								</div>
+
+								<div class="nav-item">
+									<a href="#experience" class="nav-link">Experience</a>
+								</div>
+
+								<div class="nav-item">
+									<a href="#publications" class="nav-link">Publications</a>
+								</div>
+								<div class="nav-item">
+									<a href="#others" class="nav-link">Others</a>
+								</div>
+								<div class="nav-item">
+									<a href="My_CV.pdf" class="nav-link" target=_blank>My CV</a>
+								</div>								
+							</div>									
+						</div> <!-- /flex-fill -->
+
+						<div class="w-100 mt-3">
+							<div class ='d-block'>
+								<div class="d-flex justify-content-around my-1">
+									<a aria-label="Email" href="mailto:am3000520@gmail.com" class="social-list__link"  target=_blank> <i class="fas fa-envelope"></i></a>	
+									<a aria-label="GitHub" href="https://github.com/aciculachen" class="social-list__link"  target=_blank> <i class="fab fa-github"></i></a>
+									<a aria-label="LinkedIn" href="https://www.linkedin.com/in/kevin-chen-704535125/" class="social-list__link"  target=_blank> <i class="fab fa-linkedin"></i></a>		
+									<a aria-label="Google Scholar" href="https://scholar.google.com.tw/citations?user=Ty1xu2Y0FfcC&hl=en" class="social-list__link" target=_blank ><i class="ai ai-google-scholar"></i></a>	<a aria-label="ORCID" href="https://orcid.org/0000-0002-6890-2233" target=_blank ><i class="ai ai-orcid"></i></a>															
+								</div>
+							</div> <!-- d-block-->
+							<div class="small text-muted">
+								Last Update: Feb 9, 2024
+							</div>
+							<div class="small text-muted">
+								Acicula Chen &copy; All right reserved.
+							</div>
+						</div>
+					</div>	
+				</div> <!-- /navbar -->
+				<div id="content">
+					<div class="App_Content__1SlJH container px-0 px-md-3">
+						<span id="about"></span>
+						<div class = "Section p-3 p-md-4 p-lg-5 SectionFirst">
+							<header class="mb-3 mb-md-4 text-center">
+								<h1 id="KMC"> Kevin M. Chen</h1>
+								<h5> Graduate Research Assistant,
+								<a href="https://ece.osu.edu/"> OSU ECE</a>
+								</h5>
+							</header>
+							<img src="img/me2023.jpg" class="img-me rounded-circle  mx-auto d-block p-3 p-md-4 p-lg-5" alt="Kevin M. Chen">
+							<p>  Hello, my name is Kevin Michael Chen, as known as "Acicula" Chen, or Chen Chi-Wen (hanzi:<span class="cht">陳啟文</span>). I am currently a Ph.D. student in Computer Science and Engineering at <a href="https://cse.osu.edu/" target=_blank>The Ohio State University</a>, advised by <a href="https://web.cse.ohio-state.edu/~arora.9//" target=_blank>Dr.Anish Arora</a>. My research focuses on reinforcement learning, seq2seq learning, wireless communication, computer networking, and IoT applications. Prior to my PhD study, I had three years of research experience in machine learning and wireless network communication as a fully-time research assistant advised by <a href="https://www.citi.sinica.edu.tw/~rchang/" target=_blank>Dr. Ronlad Y. Chang</a> at <a href="https://www.citi.sinica.edu.tw/en/" target=_blank> Research Center for Information Technology Innovation (CITI)</a>, <a href="https://www.sinica.edu.tw/en" target=_blank>Academia Sinica</a>, Taiwan.</p>
+							<p>Apart from the academic activity, I am an amateur guitar player having 10 more years of self-practicing guitar. The guiter hero who inspires and influences me the most is American singer-sonwriter <a href="https://en.wikipedia.org/wiki/John_Mayer" target="_blank">John mayer</a>. I study heavily on his early acoustic songs, like his debut EP <a href="https://en.wikipedia.org/wiki/Inside_Wants_Out" target="_blank">Inside Wants Out</a> and the first  studio album <a href="https://en.wikipedia.org/wiki/Room_for_Squares" target="_blank">Room for Squares</a>. Also, I am proud of having his signature Martin guitar, the Martin OM28 JM. Check out <a href="https://www.instagram.com/om28jm173/" target=_blank>here</a> for my JM covers.</p>
+						</div>
+
+						<span id="experience"></span>
+						<div class="container">
+							<div class="row">
+								<div class="Section p-3 p-md-4 p-lg-5 col-12 col-lg-6">
+									<header class="mb-3 mb-md-4 text-center"><h2>Education</h2></header>
+
+									<div class="CardA px-3 d-flex my-1 my-md-3">	
+										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+											<img src="img/logos/web/ntu_logo.png" class='w-100' alt="">
+										</div>
+
+										<div>
+											<h4>
+												Nat'l Taiwan Univ.
+												<br>
+												Class of 2017
+												<br>
+												M.S., Electrical Engineering
+											</h4>
+											<div class="mb-3">
+												<a href="https://www.ee.ntu.edu.tw/graduate/english/" target=_blank>	Graduate Institute of Electrical Engineering</a>
+												<br> National Taiwan University, Taipei, Taiwan
+											</div>
+										</div>
+									
+									</div> <!-- end of CardA-->
+
+									<div class="CardA px-3 d-flex my-1 my-md-3">
+										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+											<img src="img/logos/web/ncku_logo.png" class='w-100' alt="">	
+										</div>
+										<div>
+											<h4>
+												Nat'l Cheng Kung Univ.
+												<br>
+												Class of 2015
+												<br>
+												B.S., Photonics
+											</h4>
+											<div class="mb-3">
+												<a href="https://dps.ncku_logo.edu.tw/" target=_blank>	Department of Photonics</a> <br> National Cheng Kung University, Tainan, Taiwan
+											</div>
+										</div>
+				
+									</div> <!-- end of CardA-->
+
+								</div><!--/section__experience--edu-->
+
+
+
+
+								<div class="Section p-3 p-md-4 p-lg-5 col-12 col-lg-6">
+									<header class="mb-3 mb-md-4 text-center"><h2>Affiliation</h2></header>
+
+									<div class="CardA px-3 d-flex my-1 my-md-3">
+										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+											<img src="img/logos/web/osu_logo.png" class='w-100' alt="">	
+										</div>
+										<div>
+											<h4>	
+												The Ohio State Univ. <br>
+												2022-present <br>
+												Ph.D. Student
+											</h4>
+											<div class="mb-3">
+												Advisor: <a href="https://web.cse.ohio-state.edu/~arora.9//" target=_blank>Dr.Anish Arora</a><br>
+												<a href="https://ece.osu.edu/" target=_blank> Computer Science and Engineering</a> <br>
+												The Ohio State University, Columbus, Ohio, USA
+											</div>
+										</div>											
+									</div><!--/card -->
+
+
+									<div class="CardA px-3 d-flex my-1 my-md-3">
+										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+											<img src="img/logos/web/sinica_logo.png" class='w-100' alt="">	
+										</div>
+										<div>
+											<h4>
+												Academia Sinica <br>											2019-2021 <br>
+												Research Assistant <br>
+											</h4>
+											<div class="mb-3">
+												Advisor: <a href="https://www.citi.sinica.edu.tw/~rchang/" target=_blank>Prof. Ronald Y. Chang </a><br>
+												<a href="https://www.citi.sinica.edu.tw/en/internal/service-systems" target=_blank> Research Center for Information Technology Innovation</a> <br>
+												Academia Sinica, Taipei, Taiwan
+											</div>
+										</div>											
+									</div><!--/card --> 
+									<div class="border rounded">
+									<button type="button" class="Collapse_Opener collapsed text-center fw-bold w-100 btn btn-milk-light btn-sm" data-toggle="collapse" data-target="#collapse_content" aria-expanded="false" aria-controls="collapse_content">
+									<span class="Collapse_OpenerText mx-2">More</span>
+									</button>
+									<div>
+										<div class="collapse"  id="collapse_content">							
+										<div class="CardA px-3 d-flex my-1 my-md-3">
+										<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+											<img src="img/logos/web/Tainan_City_Government_logo.png" class='w-100' alt="">	
+										</div>
+										<div>
+											<h4>
+												Tainan City Govt. <br>										2017-2018 <br>
+												Substitute Military Service
+											</h4>
+											<div class="">
+												<a href="https://traffic.tainan.gov.tw/English/" target=_blank> Bureau of Transportation</a><br>
+												Tainan City Government, Tainan, Taiwan
+											</div>
+
+										</div>
+									</div> <!--/card -->			
+											<div class="CardA px-3 d-flex my-1 my-md-3">
+												<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+													<img src="img/logos/web/ntu_logo.png" class='w-100' alt="">	
+												</div>
+												<div>
+													<h4>
+														Nat'l Taiwan Univ.<br>
+														2015-2017 <br>
+														Grad. Research Assistant <br>
+													</h4>
+													<div class="mb-3">
+													Advisor: <a href="http://cc.ee.ntu.edu.tw/~farn/" target=_blank>Prof. Farn Wang </a><br>
+														<a href="https://www.citi.sinica.edu.tw/en/internal/service-systems" target=_blank> Automated Verification & Software Testing Lab</a> <br>
+
+														National Taiwan University, Taipei, Taiwan
+													</div>
+												</div>											
+											</div><!--/card -->
+
+											<div class="CardA px-3 d-flex my-1 my-md-3">
+												<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+													<img src="img/logos/web/TDG_logo.png" class='w-100' alt="">	
+												</div>
+												<div>
+													<h4>
+														Taipei Digital Group<br>
+														2016 <br>
+														Summar Intern <br>
+													</h4>
+													<div class="mb-3">
+														<span>Taipei Digital Group</span>,
+														Taipei, Taiwan
+													</div>
+												</div>											
+											</div><!--/card -->
+
+											<div class="CardA px-3 d-flex my-1 my-md-3">
+												<div class="CardA_Logo__2SeQ7 d-flex align-items-center justify-content-center me-3 my-1">
+													<img src="img/logos/web/ncku_logo.png" class='w-100' alt="">	
+												</div>
+												<div>
+													<h4>
+														Nat'l Cheng Kung Univ.<br>
+														2013-2014 <br>
+														Undergraduate <br>
+													</h4>
+													<div class="mb-3">
+														<a href="https://sites.google.com/view/pvpecncku/home" target=_blank>PVPEC Lab, Department of Photonics</a> <br>
+														National Cheng Kung University, Tainan, Taiwan
+													</div>
+												</div>											
+											</div><!--/card -->
+
+										</div> <!-- /collapse -->		
+									</div><!--border rounded--->
+								</div><!--Section--->
+							</div><!--row--->
+						</div><!--contrainer--->
+
+						<span id = "publications"></span>
+						<div class="Section p-3 p-md-4 p-lg-5 Publication_Section__1FBto">
+							<header class="mb-3 mb-md-4 text-center"><h2>Publications</h2></header>
+							<div>
+								<div class>
+									<ul class="nav nav-tabs" id="nav-tab" role="tablist" >
+										<li class="nav-item">
+											<a class="nav__link active" id="journal-tab" data-toggle="tab" href="#journal" role="tab" aria-controls="journal" aria-selected="true">Journal Papers</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav__link" id="conference-tab" data-toggle="tab" href="#conference" role="tab" aria-controls="conference" aria-selected="false">Conference Papers</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="tab-content" id = "tab_container">
+									<div class="tab-pane fade show active" id="journal" role="tabpanel" aria-labelledby="journal-tab">
+												
+												<div id="publication-ieee-access-2019" class='CardB p-3 p-lg-4'>
+												<div class="row">
+														<div class="d-flex align-items-center justify-content-center mb-3 mb-lg-0 col-xl-3 col-lg-4 col-12">
+															<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639"target=_blank>IEEE Access
+															</a>
+														</div>
+														<div class='col-xl-9 col-lg-8 col-12'>
+															<header>
+																<h4>Interpreting Convolutional Neural Networks for Device-Free Wi-Fi Fingerprinting Indoor Localization via Information Visualization</h4>
+																<p> <strong>Kevin M. Chen</strong>, Ronald Y. Chang, and Shing-Jiuan Liu <br>
+																	2019, IEEE Access
+																</p>
+															</header>
+															<div class="btn-cluster">
+																<a class="btn btn-outline-secondary btn-sm" href="https://www.citi.sinica.edu.tw/papers/rchang/7030-F.pdf" target="_blank" rel="noopener"> <i class="fas fa-file-pdf"></i> Paper
+																</a>
+
+																<a class="btn btn-outline-secondary btn-sm" href="https://github.com/aciculachen/CSI-LRP" target="_blank" rel="noopener"> Github 
+																</a>								
+															</div> <!--/btn-cluster -->
+															
+														</div>
+												</div>
+											</div><!--/publication -->	
+									</div><!--/journal_publications list-->
+									<div class="tab-pane fade" id="conference" role="tabpanel" aria-labelledby="conference-tab">
+										<div id="publication-globecom-2021" class='CardB p-3 p-lg-4'>
+											<div class="row">
+												<div class="d-flex align-items-center justify-content-center mb-3 mb-lg-0 col-xl-3 col-lg-4 col-12">
+													<a href="https://globecom2021.ieee-globecom.org/"target=_blank>GLOBECOM 2021
+													</a>
+												</div>
+												<div class='col-xl-9 col-lg-8 col-12'>
+													<header>
+														<h4>A Comparative Study of Deep-Learning-Based Semi-Supervised Device-Free Indoor Localization</h4>
+														<p> <strong>Kevin M. Chen</strong> and Ronald Y. Chang 
+															<br>
+															2021, IEEE Global Communications Conference, (GLOBECOM2021)
+														</p>
+													</header>
+													<div class="btn-cluster">
+														<a class="btn btn-outline-secondary btn-sm" href="https://www.citi.sinica.edu.tw/papers/rchang/8092-F.pdf" target="_blank" rel="noopener"> <i class="fas fa-file-pdf"></i> Paper
+														</a>
+
+														<a class="btn btn-outline-secondary btn-sm" href="https://github.com/aciculachen/CSI-SemiVAE" target="_blank" rel="noopener"> Github 
+														</a>
+
+														<a class="btn btn-outline-secondary btn-sm" href="src/slides/globecom21.pdf" target="_blank" rel="noopener"> Slide
+														</a>
+
+													</div> <!--/btn-cluster -->
+													
+												</div>
+											</div>
+										</div><!--/publication -->
+										<div id="publication-globecom-2020" class='CardB p-3 p-lg-4'>
+											<div class="row">
+												<div class="d-flex align-items-center justify-content-center mb-3 mb-lg-0 col-xl-3 col-lg-4 col-12">
+													<a href="https://globecom2020.ieee-globecom.org/"target=_blank>GLOBECOM 2020
+													</a>
+												</div>
+												<div class='col-xl-9 col-lg-8 col-12'>
+													<header>
+														<h4>Semi-Supervised Learning with GANs for Device-Free Fingerprinting Indoor Localization</h4>
+														<p> <strong>Kevin M. Chen</strong> and Ronald Y. Chang 
+															<br>
+															2020, IEEE Global Communications Conference, (GLOBECOM2020)
+														</p>
+													</header>
+													<div class="btn-cluster">
+														<a class="btn btn-outline-secondary btn-sm" href="https://www.citi.sinica.edu.tw/papers/rchang/7369-F.pdf" target="_blank" rel="noopener"> <i class="fas fa-file-pdf"></i> Paper
+														</a>
+
+														<a class="btn btn-outline-secondary btn-sm" href="https://github.com/aciculachen/CSI-SemiGAN" target="_blank" rel="noopener"> Github 
+														</a>
+
+														<a class="btn btn-outline-secondary btn-sm" href="src/slides/globecom20.pdf" target="_blank" rel="noopener"> Slide
+														</a>										
+													</div> <!--/btn-cluster -->
+													
+												</div>
+											</div>
+										</div><!--/publication -->
+										<div id="publication-tcse-2017" class='CardB p-3 p-lg-4'>
+											<div class="row">
+												<div class="d-flex align-items-center justify-content-center mb-3 mb-lg-0 col-xl-3 col-lg-4 col-12">
+													<a href="https://easychair.org/cfp/TCSE2017"target=_blank>TCSE 2017
+													</a>
+												</div>
+												<div class='col-xl-9 col-lg-8 col-12'>
+													<header>
+														<h4>"Automated Cloud Sandbox Deployment for implementing DevOps"</h4>
+														<p> <strong>Chi-Wen Chen</strong> and Farn Wang
+															<br>
+															2017, Taiwan Conference on Software Engineering, (TCSE2017)
+														</p>
+													</header>
+													<div class="btn-cluster">
+														<a class="btn btn-outline-secondary btn-sm" href="src/pub/tcse.pdf" target="_blank" rel="noopener"> <i class="fas fa-file-pdf"></i> Paper
+														</a>									
+													</div> <!--/btn-cluster -->
+													
+												</div>
+											</div>
+										</div><!--/publication -->	
+									</div><!--/conference_publications list-->									
+								</div><!--/tab_container-->	
+							</div>
+						</div><!--/publications list-->
+						
+						<span id = "others"></span>
+						<div class="Section p-3 p-md-4 p-lg-5 Others_Section__1FBto">
+							<header class="mb-3 mb-md-4 text-center"><h2>Guitars Collection</h2></header>
+								<div>
+									<div class="row row-cols-1 row-cols-md-2">
+										<article id ="om28jm" class="col px-3 my-1 my-md-3">
+											<div class="card mb-3 position-relative">
+												<div class="position-absolute">
+													<span class="badge rounded">2021-</span>
+												</div>
+												<div class="row g-0 ">
+													<div class="col-md-4 text-center p-2 ">
+														<img width="77" height="200" alt="" src="img/guitars/Martin-OM28JM.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+													</div>
+													<div class="col-md-8 d-flex align-items-center">
+														<div class="card-body">
+															<h5 class="card-title">Martin OM-28 John Mayer</h5>
+															<p>This guitar was luckily found and purchased through a friend (also a big fan of John Mayer) working in a guitar shop in Taipei, Taiwan. The guitar is the first official John Mayer Signature model made by Martin and was produced as a limited run of only 404, and I own the #173. The guitar features a solid Engelmann spruce top and solid East Indian rosewood back and sides.</p>
+														</div>
+													</div>											
+												</div>
+											</div>
+										</article>																	
+										<article class="col px-3 my-1 my-md-3">
+											<div class="card mb-3 position-relative">
+												<div class="position-absolute">
+													<span class="badge rounded">2012-</span>
+												</div>
+												<div class="row g-0">
+													<div class="col-md-4 text-center p-2">
+														<img width="77" height="200" alt="" src="img/guitars/Martin-HD28.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+													</div>
+													<div class="col-md-8 d-flex align-items-center">
+														<div class="card-body">
+															<h5 class="card-title">Martin HD-28</h5>
+															<p>This guitar was purchased for celebrating my 20-year-old birthday and is the one that introduces me to Martin Guitar. After years of practicing, at that moment, I thought it is time to have an all-solid guitar, and luckily I found this pre-owned Martin at a guitar shop in Tainan, Taiwan. The guitar features a solid Sitka spruce top and solid East Indian rosewood back and sides.</p>
+														</div>
+													</div>											
+												</div>
+											</div>
+										</article>			
+									</div>
+									<div class="border rounded border-0 ">
+										<button type="button" class="Collapse_Opener collapsed text-center fw-bold w-100 btn btn-milk-light btn-sm" data-toggle="collapse" data-target="#collapse_guitar" aria-expanded="false" aria-controls="collapse_guitar">
+										<span class="Collapse_OpenerText mx-2">More</span>
+										</button>
+
+										<div class="mb-3">
+											<div class="collapse"  id="collapse_guitar">
+												<div class="row row-cols-1 row-cols-md-2">
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute">
+																<span class="badge rounded">2011-</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="77" height="200" alt="" src="img/guitars/Yamaha-F310.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">YAMAHA F310</h5>
+																		<p>This is my first acoustic guitar.  I  purchased it at an inconspicuous local guitar shop near my home in Tainan, Taiwan.</p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>													
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute top-0 top-rem translate-middle">
+																<span class="badge rounded">2016-</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="67" height="200" alt="" src="img/guitars/fender-japan-strat-upright.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">Fender Japan Stratocaster, 1993</h5>
+																		<p>This pre-owned guitar is a gift from my aunt. The guitar features a Floyd Rose vibrato system. While this guitar is super unplayable due to its broken vibrato system, which makes it easily out of tune.</p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>												
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute">
+																<span class="badge rounded disconnected">2016-2021</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="77" height="200" alt="" src="img/guitars/Martin-D18GE.png" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">Martin D-18 Gorden Era</h5>
+																		<p>This guitar was purchased during my graduation trip to Fukuoka, Japan in 2016. The guitar features a solid Adirondack spruce top and Genuine Mahogany back and sides. The guitar was later sold due to its playability, vintage V-shape neck making me hard to play JM's song. The sound of this guitar is pretty amzing though.</p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>
+													<article class="col px-3 my-1 my-md-3">
+														<div class="card mb-3 position-relative">
+															<div class="position-absolute top-0 top-rem translate-middle">
+																<span class="badge rounded disconnected">2018-2021</span>
+															</div>
+															<div class="row g-0">
+																<div class="col-md-4 text-center p-2">
+																	<img width="67" height="200" alt="" src="img/guitars/Fender-52Tele.jpg" class="mx-auto my-3 mw-100 h-auto align-middle wp-post-image ls-is-cached br-loaded">
+																</div>
+																<div class="col-md-8 d-flex align-items-center">
+																	<div class="card-body">
+																		<h5 class="card-title">Fender American Vintage '52 Telecaster</h5>
+																		<p>This guitar was purchased at a famous guitar shop in Taipei, Taiwan. It is my first electric guitar, officially. At that moment, I felt like playing JM's electric licks. Despite I had sold it since I later realized I am just an acoustic guy lol.</p>
+																	</div>
+																</div>											
+															</div>
+														</div>
+													</article>
+												</div>	
+											</div> 								
+										</div> 
+									</div>							
+								</div>
+						</div>
+					
+
+					</div><!--/content__container -->
+
+				</div> <!--/content -->
+			</div> <!--/container -->
+		</div><!--/app -->
+</div> <!--/root -->
+
+<script src="scripts/main5.js"></script>
+
+</body>	
+
+
+</html>

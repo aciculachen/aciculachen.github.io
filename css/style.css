@@ -53,9 +53,16 @@ QQ
     --bs-accent-light: #8FBC8F;
     --bs-accent-dark: #339966;
 
+    --light-forest-green: #4F8A5B;
+    --dark-forest-green: #1B4332;
+
 }
 
 /* general style */
+
+.text-light-forest-green { color: var(--light-forest-green); }
+.text-dark-forest-green  { color: var(--dark-forest-green); }
+#KMC, .CardB strong { color: var(--dark-forest-green); }
 
 
 body{
